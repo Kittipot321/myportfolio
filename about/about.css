@@ -9,8 +9,8 @@ body{
     font-size: 16pt;
 }
 .pic{
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
     margin: 1% 10% auto 25%;
     border: 5px solid white;
     border-radius: 50%;
@@ -42,7 +42,7 @@ hr{
 .btt{
     text-align: center;
 }
-.fb, .line, .tel{
+.tel{
     width: 20px;
     height: 20px;
 }
@@ -50,4 +50,12 @@ hr{
     width: 25px;
     height: 25px;
     margin-right: 1%;
+}
+.image{
+    width: 40px;
+    height: 40px;
+}
+.font{
+    padding-left: 5%;
+    padding-right: 5%;
 }
