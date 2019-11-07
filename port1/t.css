@@ -1,0 +1,15 @@
+#body{
+  text-align: center;
+  background-image: url(energybg.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+    }
+.header1{
+  color: yellow;
+}
+.header2{
+  color: black;
+}
+.header3{
+  color:red;
+}

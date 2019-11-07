@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculate the electricity</title>
+  <link href="t.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="../../index.html">TopChoco</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../download.html">Download</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <div class="container">
+    <form method="POST" action="cal2.php">
+      <h1 class="header1">Calculate the electricity</h1>
+      <p>My webpage about calculate the electricity</p>
+      <a href="image.html">How to calculate the electricity?</a>
+      <hr color="blue">
+      Name : <input type="textbox" name="name"><br>
+      Electric power : <input type="textbox" name="power"> Watt(s)<br>
+      Duration of time : <input type="textbox" name="time"> Hour(s)<br>
+      Each of electric unit : <input type="textbox" name="amount"> Baht<br>
+      <input type="submit" value="Calculate"></a>
+      <input type="reset" value="Clear!!!">
+      <h2 class="header2">Example</h2>
+      <hr>
+      <table border="4">
+        <thead>
+          <tr class="thcolor">
+            <th scope="col">Name</th>
+            <th scope="col">Electric power (Watt(s))</th>
+            <th scope="col">Duration of time(Hour(s))</th>
+            <th scope="col">Total of unit(s) (Unit(s))</th>
+            <th scope="col">Each of electric unit</th>
+            <th scope="col">Electric cost (Baht)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LED 4K Ultra HD</td>
+            <td>395</td>
+            <td>7</td>
+            <td>2.8</td>
+            <td rowspan="2">7</td>
+            <td>19.36</td>
+          </tr>
+          <tr>
+            <td>Rice cooker</td>
+            <td>400</td>
+            <td>3</td>
+            <td>1.2</td>
+            <td>8.40</td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <h2 class="header3">Learn More</h2>
+    <hr>
+    <img src="electric1.jpg" width="420" height="272">
+    <img src="electric2.png" width="420" height="272"><br>
+    <a href="https://en.wikipedia.org/wiki/Energy">
+      <font color="yellow">Wikipedia:Energy</font>
+    </a>
+    <a href="https://energy.go.th">
+      <font color="yellow">Ministry of Energy</font>
+    </a>
+    <p>
+      <font size="4" , font color="yellow">Author by 61070014 &#3585;&#3636;&#3605;&#3605;&#3636;&#3614;&#3624;
+        &#3621;&#3632;&#3629;&#3629;&#3591;&#3624;&#3619;&#3637;</font>
+    </p>
+  </div>
+</body>
+
+</html>

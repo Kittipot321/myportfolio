@@ -24,15 +24,42 @@
         background-image: url('https://abminaction.com/wp-content/uploads/rollworks-big-book-1920x1080-background.jpg');
         background-size: 100%;
     }
-    .card-group{
-        padding-left: 10%;
-        padding-right: 10%;
+
+    @keyframes animation {
+        0% {
+            content: "Welcome to my portfolio";
+            color: black;
+        }
+
+        25% {
+            color: transparent;
+        }
+
+        50% {
+            content: "แฟ้มสะสมผลงาน";
+            color: black;
+        }
+
+        75% {
+            color: transparent;
+        }
+
+        100% {
+            content: "Welcome to my portfolio";
+            color: black;
+        }
+    }
+
+    h1:before {
+        content: "text";
+        animation: animation 10s linear;
+        animation-iteration-count: infinite;
     }
 </style>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="index.html">TopChoco</a>
+        <a class="navbar-brand" href="../index.html">TopChoco</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,86 +78,99 @@
             </ul>
         </div>
     </nav>
-    <center>
-        <h1>Welcome to my portfolio</h1>
-        <div class="card mb-3" style="max-width: 540px;">
-            <form method="GET" action="http://www.google.co.th/custom" target="_blank">
-            <input type="search" name="q" id="" class="form-control col"
-                placeholder="Google Search.....Search Everything" required>
-            <button class="btn btn-primary col-md" type="submit" name="">Search</button>
-            </form>
-        </div>
-        <!--line 1-->
-        <div class="card-group">
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+    <div class="container">
+        <center>
+            <h1></h1>
+            <div class="card mb-3" style="max-width: 540px;">
+                <form method="GET" action="http://www.google.co.th/custom" target="_blank">
+                    <input type="search" name="q" id="inp" class="form-control col" placeholder="Google Search"
+                        required>
+                    <button class="btn btn-primary col-md" type="submit" name="" onclick="run()">Search</button>
+                </form>
+            </div>
+            <!--line 1-->
+            <div class="card-group">
+                <div class="card bg-light mb-3" style="max-width: 100rem;">
+                    <div class="card-header">History Search</div>
+                    <div class="card-body">
+                        <p id=ino></p>
+                        <script>
+                            var amount = 0;
+                            function run() {
+                                var show = document.getElementById("inp").value;
+                                amount++;
+                                ino.innerHTML += " | " + show;
+                            }
+                        </script>
+                    </div>
                 </div>
             </div>
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+            <!--line 2-->
+            <h3>My Program</h3>
+            <hr>
+            <div class="card-group">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Energy Webpage</div>
+                    <div class="card-body">
+                        <img src="screenshot1.png" class="bd-placeholder-img rounded-circle border" width="180"
+                            height="180" alt="">
+                        <h5 class="card-title">ITF</h5>
+                        <p class="card-text">เกี่ยวกับวิธีคิดและการคำนวณพลังงาน</p><br>
+                        <a href="port1/energy.html" class="form-control btn btn-primary">View</a>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">GoldPrice</div>
+                    <div class="card-body">
+                        <img src="screenshot2.png" class="bd-placeholder-img rounded-circle border" width="180"
+                            height="180" alt="">
+                        <h5 class="card-title">Computer Programming</h5>
+                        <p class="card-text">โปรแกรมรายงานราคาทองในประเทศไทย ทั้งราคาทองคำแท่งและทองคำรูปพรรณประจำวัน</p>
+                        <a href="https://github.com/Kittipot321/GoldPrice_CP61P" class="form-control btn btn-primary">View</a>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+            <!--line 3-->
+            <h3>Documents</h3>
+            <hr>
+            <div class="card-group">
+                <div class="card bg-light mb-3" style="max-width: 50rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 50rem;">
+                    <div class="card-header">รายงาน</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">PDF Test | <a href="download/รายงานcomor.pdf" class="btn-sm btn btn-success">Download</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </div>
-        <!--line 2-->
-        <div class="card-group">
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </div>
-    </center>
+        </center>
+    </div>
 </body>
 
 </html>
