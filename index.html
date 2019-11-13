@@ -22,30 +22,38 @@
 <style>
     body {
         background-image: url('https://abminaction.com/wp-content/uploads/rollworks-big-book-1920x1080-background.jpg');
-        background-size: 100%;
+        background-size: 125%;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: repeat;
     }
 
     @keyframes animation {
         0% {
             content: "Welcome to my portfolio";
+            font-size: 18pt;
             color: black;
         }
 
         25% {
             color: transparent;
+            font-size: 18pt;
         }
 
         50% {
             content: "แฟ้มสะสมผลงาน";
             color: black;
+            font-size: 24pt;
         }
 
         75% {
             color: transparent;
+            font-size: 24pt;
         }
 
         100% {
             content: "Welcome to my portfolio";
+            font-size: 18pt;
             color: black;
         }
     }
@@ -81,35 +89,12 @@
     <div class="container">
         <center>
             <h1></h1>
-            <div class="card mb-3" style="max-width: 540px;">
-                <form method="GET" action="http://www.google.co.th/custom" target="_blank">
-                    <input type="search" name="q" id="inp" class="form-control col" placeholder="Google Search"
-                        required>
-                    <button class="btn btn-primary col-md" type="submit" name="" onclick="run()">Search</button>
-                </form>
-            </div>
             <!--line 1-->
-            <div class="card-group">
-                <div class="card bg-light mb-3" style="max-width: 100rem;">
-                    <div class="card-header">History Search</div>
-                    <div class="card-body">
-                        <p id=ino></p>
-                        <script>
-                            var amount = 0;
-                            function run() {
-                                var show = document.getElementById("inp").value;
-                                amount++;
-                                ino.innerHTML += " | " + show;
-                            }
-                        </script>
-                    </div>
-                </div>
-            </div>
             <!--line 2-->
             <h3>My Program</h3>
             <hr>
             <div class="card-group">
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card bg-light row-sm-8" style="max-width: 18rem;">
                     <div class="card-header">Energy Webpage</div>
                     <div class="card-body">
                         <img src="screenshot1.png" class="bd-placeholder-img rounded-circle border" width="180"
@@ -119,17 +104,19 @@
                         <a href="port1/energy.html" class="form-control btn btn-primary">View</a>
                     </div>
                 </div>
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card bg-light row-sm-8" style="max-width: 18rem;">
                     <div class="card-header">GoldPrice</div>
                     <div class="card-body">
                         <img src="screenshot2.png" class="bd-placeholder-img rounded-circle border" width="180"
                             height="180" alt="">
                         <h5 class="card-title">Computer Programming</h5>
-                        <p class="card-text">โปรแกรมรายงานราคาทองในประเทศไทย ทั้งราคาทองคำแท่งและทองคำรูปพรรณประจำวัน</p>
-                        <a href="https://github.com/Kittipot321/GoldPrice_CP61P" class="form-control btn btn-primary">View</a>
+                        <p class="card-text">โปรแกรมรายงานราคาทองในประเทศไทย ทั้งราคาทองคำแท่งและทองคำรูปพรรณประจำวัน
+                        </p>
+                        <a href="https://github.com/Kittipot321/GoldPrice_CP61P"
+                            class="form-control btn btn-primary">View</a>
                     </div>
                 </div>
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card bg-light row-sm-8" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body">
                         <h5 class="card-title">Light card title</h5>
@@ -138,7 +125,7 @@
                             card's content.</p>
                     </div>
                 </div>
-                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card bg-light row-sm-8" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body">
                         <h5 class="card-title">Light card title</h5>
@@ -147,7 +134,7 @@
                             card's content.</p>
                     </div>
                 </div>
-            </div>
+            </div><br>
             <!--line 3-->
             <h3>Documents</h3>
             <hr>
@@ -165,12 +152,18 @@
                     <div class="card-header">รายงาน</div>
                     <div class="card-body">
                         <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">PDF Test | <a href="download/รายงานcomor.pdf" class="btn-sm btn btn-success">Download</a></p>
+                        <p class="card-text">PDF Test | <a href="404.html" class="btn-sm btn btn-warning">Download</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </center>
     </div>
 </body>
+<div class="bg-dark">
+    <footer class="footer">
+        <p class="text-center text-white">Copyright 2019 | TopChoco</p>
+    </footer>
+</div>
 
 </html>
