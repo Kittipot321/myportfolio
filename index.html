@@ -17,7 +17,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Kanit:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <style>
@@ -30,40 +31,13 @@
         font-family: 'Kanit', sans-serif;
     }
 
-    @keyframes animation {
-        0% {
-            content: "Welcome to my portfolio";
-            font-size: 18pt;
-            color: black;
-        }
-
-        25% {
-            color: transparent;
-            font-size: 18pt;
-        }
-
-        50% {
-            content: "แฟ้มสะสมผลงาน";
-            color: black;
-            font-size: 24pt;
-        }
-
-        75% {
-            color: transparent;
-            font-size: 24pt;
-        }
-
-        100% {
-            content: "Welcome to my portfolio";
-            font-size: 18pt;
-            color: black;
-        }
+    .image {
+        width: 40px;
+        height: 40px;
     }
 
-    h1:before {
-        content: "text";
-        animation: animation 10s linear;
-        animation-iteration-count: infinite;
+    .navbar-brand {
+        font-family: 'Press Start 2P', cursive;
     }
 </style>
 
@@ -140,38 +114,39 @@
                 </div>
             </div><br>
             <!--line 3-->
-            <h3>Documents</h3>
-            <hr>
             <div class="card-group">
-                <div class="card bg-light mb-3" style="max-width: 50rem;">
-                    <div class="card-header">Header</div>
+                <div class="card bg-light mb-3" style="max-width: 75rem;">
+                    <div class="card-header">My Playground</div>
                     <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                </div>
-                <div class="card bg-light mb-3" style="max-width: 50rem;">
-                    <div class="card-header">รายงาน</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">PDF Test | <a href="404.html"
-                                class="btn-sm btn btn-warning col-sm-2">Download</a>
-                            <p class="card-text">Codepen | <a href="https://codepen.io/kittipot321"
-                                    class="btn-sm btn btn-outline-primary col-sm-2">View</a>
-                            </p>
-                        </p>
+                        <h5 class="card-title">For practice</h5>
+                        <a href="https://codepen.io/kittipot321">
+                            <p class="btn-sm btn btn-outline-dark col-sm-2">Codepen</p>
+                        </a>
+                        <a href="404.html">
+                            <p class="btn-sm btn btn-outline-danger col-sm-2">-</p>
+                        </a>
+                        <a href="404.html">
+                            <p class="btn-sm btn btn-outline-danger col-sm-2">-</p>
+                        </a>
+                        <a href="404.html">
+                            <p class="btn-sm btn btn-outline-danger col-sm-2">-</p>
+                        </a>
+                        <a href="404.html">
+                            <p class="btn-sm btn btn-outline-danger col-sm-2">-</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </center>
     </div>
 </body>
-<div class="bg-dark">
-    <footer class="footer">
+<footer class="bd-footer">
+    <div class="container-fluid bg-dark p-1 md-5 text-center">
+        <a href="https://www.facebook.com/kittipot.laorgsri"><img src="/about/facebook.png" class="image"></a>
+        <a href="https://twitter.com/Topfy5555"><img src="/about/twitter.png" class="image"></a>
+        <a href="https://www.instagram.com/topchoco_kl/"><img src="/about/instagram.png" class="image"></a>
         <p class="text-center text-white">Copyright 2019 | TopChoco</p>
-    </footer>
-</div>
+    </div>
+</footer>
 
 </html>
